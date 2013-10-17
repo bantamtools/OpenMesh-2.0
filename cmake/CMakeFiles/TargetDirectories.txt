@@ -1,0 +1,5 @@
+/Users/sarah/othercam/OpenMesh-2.0/cmake/src/OpenMesh/Core/CMakeFiles/OpenMeshCore.dir
+/Users/sarah/othercam/OpenMesh-2.0/cmake/src/OpenMesh/Core/CMakeFiles/OpenMeshCoreStatic.dir
+/Users/sarah/othercam/OpenMesh-2.0/cmake/src/OpenMesh/Tools/CMakeFiles/OpenMeshTools.dir
+/Users/sarah/othercam/OpenMesh-2.0/cmake/src/OpenMesh/Tools/CMakeFiles/OpenMeshToolsStatic.dir
+/Users/sarah/othercam/OpenMesh-2.0/cmake/CMakeFiles/PACKAGE_SOURCE.dir

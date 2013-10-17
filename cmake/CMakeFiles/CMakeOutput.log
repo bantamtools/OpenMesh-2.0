@@ -1,0 +1,310 @@
+The system is: Darwin - 10.6.0 - i386
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+CMakeCXXCompilerId.cpp:67: warning: deprecated conversion from string constant to ‘char*’
+CMakeCXXCompilerId.cpp:157: warning: deprecated conversion from string constant to ‘char*’
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp'
+"/Applications/CMake 2.6-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o   -c /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec
+"/Applications/CMake 2.6-4.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -headerpad_max_install_names -fPIC CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o  -o cmTryCompileExec  
+gmake[1]: Leaving directory `/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp'
+"/Applications/CMake 2.6-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c "/Applications/CMake 2.6-4.app/Contents/share/cmake-2.6/Modules/CMakeCCompilerABI.c"
+Linking C executable cmTryCompileExec
+"/Applications/CMake 2.6-4.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -headerpad_max_install_names -fPIC CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec  
+gmake[1]: Leaving directory `/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp'
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp'
+"/Applications/CMake 2.6-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o -c /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec
+"/Applications/CMake 2.6-4.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -headerpad_max_install_names -fPIC CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec  
+gmake[1]: Leaving directory `/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp'
+"/Applications/CMake 2.6-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c "/Applications/CMake 2.6-4.app/Contents/share/cmake-2.6/Modules/CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTryCompileExec
+"/Applications/CMake 2.6-4.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -headerpad_max_install_names -fPIC CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec  
+gmake[1]: Leaving directory `/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp'
+
+
+Determining if the Q_WS_MAC exist passed with the following output:
+Change Dir: /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp'
+"/Applications/CMake 2.6-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -F/Library/Frameworks   -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:
+/Library/Frameworks/QtCore.framework/Headers/qglobal.h:311:6: warning: #warning "Support for this version of Mac OS X is still preliminary"
+Linking C executable cmTryCompileExec
+"/Applications/CMake 2.6-4.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc     -F/Library/Frameworks -Wl,-search_paths_first -headerpad_max_install_names -fPIC CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o  -o cmTryCompileExec  
+gmake[1]: Leaving directory `/Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp'
+
+File /Users/martin/src/otherfab/data/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qglobal.h>
+
+void cmakeRequireSymbol(int dummy,...){(void)dummy;}
+int main()
+{
+#ifndef Q_WS_MAC
+  cmakeRequireSymbol(0,&Q_WS_MAC);
+#endif
+  return 0;
+}
+
+The system is: Darwin - 12.5.0 - i386
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/2.8.12/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/2.8.12/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4291484085/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4291484085.dir/build.make CMakeFiles/cmTryCompileExec4291484085.dir/build
+"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_progress_report /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4291484085.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4291484085.dir/testCCompiler.c.o   -c /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec4291484085
+"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec4291484085.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4291484085.dir/testCCompiler.c.o  -o cmTryCompileExec4291484085  
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec381655571/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec381655571.dir/build.make CMakeFiles/cmTryCompileExec381655571.dir/build
+"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_progress_report /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec381655571.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec381655571.dir/CMakeCCompilerABI.c.o   -c "/Applications/CMake 2.8-12.app/Contents/share/cmake-2.8/Modules/CMakeCCompilerABI.c"
+Linking C executable cmTryCompileExec381655571
+"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec381655571.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec381655571.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec381655571   
+Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+Target: x86_64-apple-darwin12.5.0
+Thread model: posix
+ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.8.0 -o cmTryCompileExec381655571 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec381655571.dir/CMakeCCompilerABI.c.o -lSystem /usr/bin/../lib/clang/4.2/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-136
+configured to support archs: armv6 armv7 armv7s i386 x86_64
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec381655571/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec381655571.dir/build.make CMakeFiles/cmTryCompileExec381655571.dir/build]
+  ignore line: ["/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_progress_report /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec381655571.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec381655571.dir/CMakeCCompilerABI.c.o   -c "/Applications/CMake 2.8-12.app/Contents/share/cmake-2.8/Modules/CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTryCompileExec381655571]
+  ignore line: ["/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec381655571.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec381655571.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec381655571   ]
+  ignore line: [Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)]
+  ignore line: [Target: x86_64-apple-darwin12.5.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.8.0 -o cmTryCompileExec381655571 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec381655571.dir/CMakeCCompilerABI.c.o -lSystem /usr/bin/../lib/clang/4.2/lib/darwin/libclang_rt.osx.a]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.8.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec381655571] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec381655571.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/usr/bin/../lib/clang/4.2/lib/darwin/libclang_rt.osx.a] ==> lib [/usr/bin/../lib/clang/4.2/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/usr/bin/../lib/clang/4.2/lib/darwin/libclang_rt.osx.a] ==> [/usr/lib/clang/4.2/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [/usr/lib/clang/4.2/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3472807688/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3472807688.dir/build.make CMakeFiles/cmTryCompileExec3472807688.dir/build
+"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_progress_report /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3472807688.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3472807688.dir/testCXXCompiler.cxx.o -c /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3472807688
+"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec3472807688.dir/link.txt --verbose=1
+/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3472807688.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3472807688  
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3853882302/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3853882302.dir/build.make CMakeFiles/cmTryCompileExec3853882302.dir/build
+"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_progress_report /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3853882302.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3853882302.dir/CMakeCXXCompilerABI.cpp.o -c "/Applications/CMake 2.8-12.app/Contents/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTryCompileExec3853882302
+"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec3853882302.dir/link.txt --verbose=1
+/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec3853882302.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3853882302   
+Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+Target: x86_64-apple-darwin12.5.0
+Thread model: posix
+ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.8.0 -o cmTryCompileExec3853882302 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec3853882302.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/4.2/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-136
+configured to support archs: armv6 armv7 armv7s i386 x86_64
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3853882302/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3853882302.dir/build.make CMakeFiles/cmTryCompileExec3853882302.dir/build]
+  ignore line: ["/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_progress_report /Users/sarah/libs/OpenMesh-2.0/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3853882302.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3853882302.dir/CMakeCXXCompilerABI.cpp.o -c "/Applications/CMake 2.8-12.app/Contents/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp"]
+  ignore line: [Linking CXX executable cmTryCompileExec3853882302]
+  ignore line: ["/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec3853882302.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec3853882302.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3853882302   ]
+  ignore line: [Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)]
+  ignore line: [Target: x86_64-apple-darwin12.5.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.8.0 -o cmTryCompileExec3853882302 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec3853882302.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/4.2/lib/darwin/libclang_rt.osx.a]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.8.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3853882302] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3853882302.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lSystem] ==> lib [System]
+    arg [/usr/bin/../lib/clang/4.2/lib/darwin/libclang_rt.osx.a] ==> lib [/usr/bin/../lib/clang/4.2/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/usr/bin/../lib/clang/4.2/lib/darwin/libclang_rt.osx.a] ==> [/usr/lib/clang/4.2/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [stdc++;/usr/lib/clang/4.2/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
