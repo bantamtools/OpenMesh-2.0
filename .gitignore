@@ -1,0 +1,3 @@
+cmake/Build/*
+cmake/CMakeCache.txt
+cmake/src/*
