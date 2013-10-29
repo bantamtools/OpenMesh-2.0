@@ -1,4 +1,4 @@
-# Install script for directory: /Users/sarah/othercam/OpenMesh-2.0
+# Install script for directory: /Users/mikest/github/othercam/OpenMesh-2.0
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,9 +29,9 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/Users/sarah/othercam/OpenMesh-2.0/cmake/src/OpenMesh/Core/cmake_install.cmake")
-  INCLUDE("/Users/sarah/othercam/OpenMesh-2.0/cmake/src/OpenMesh/Tools/cmake_install.cmake")
-  INCLUDE("/Users/sarah/othercam/OpenMesh-2.0/cmake/Doc/cmake_install.cmake")
+  INCLUDE("/Users/mikest/github/othercam/OpenMesh-2.0/cmake/src/OpenMesh/Core/cmake_install.cmake")
+  INCLUDE("/Users/mikest/github/othercam/OpenMesh-2.0/cmake/src/OpenMesh/Tools/cmake_install.cmake")
+  INCLUDE("/Users/mikest/github/othercam/OpenMesh-2.0/cmake/Doc/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -41,7 +41,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/Users/sarah/othercam/OpenMesh-2.0/cmake/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/Users/mikest/github/othercam/OpenMesh-2.0/cmake/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/Users/sarah/othercam/OpenMesh-2.0/cmake/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/Users/mikest/github/othercam/OpenMesh-2.0/cmake/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

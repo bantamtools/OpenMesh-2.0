@@ -1,4 +1,4 @@
-# Install script for directory: /Users/sarah/othercam/OpenMesh-2.0/Doc
+# Install script for directory: /Users/mikest/github/othercam/OpenMesh-2.0/Doc
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

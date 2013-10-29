@@ -26,22 +26,22 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/cmake"
+CMAKE_COMMAND = "/Applications/CMake 2.8-11.app/Contents/bin/cmake"
 
 # The command to remove a file.
-RM = "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E remove -f
+RM = "/Applications/CMake 2.8-11.app/Contents/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/ccmake"
+CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-11.app/Contents/bin/ccmake"
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sarah/othercam/OpenMesh-2.0
+CMAKE_SOURCE_DIR = /Users/mikest/github/othercam/OpenMesh-2.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sarah/othercam/OpenMesh-2.0/cmake
+CMAKE_BINARY_DIR = /Users/mikest/github/othercam/OpenMesh-2.0/cmake
 
 # Utility rule file for PACKAGE_SOURCE.
 
@@ -49,7 +49,7 @@ CMAKE_BINARY_DIR = /Users/sarah/othercam/OpenMesh-2.0/cmake
 include CMakeFiles/PACKAGE_SOURCE.dir/progress.make
 
 CMakeFiles/PACKAGE_SOURCE:
-	"/Applications/CMake 2.8-12.app/Contents/bin/cpack" --config /Users/sarah/othercam/OpenMesh-2.0/cmake/CPackSourceConfig.cmake
+	"/Applications/CMake 2.8-11.app/Contents/bin/cpack" --config /Users/mikest/github/othercam/OpenMesh-2.0/cmake/CPackSourceConfig.cmake
 
 PACKAGE_SOURCE: CMakeFiles/PACKAGE_SOURCE
 PACKAGE_SOURCE: CMakeFiles/PACKAGE_SOURCE.dir/build.make
@@ -64,6 +64,6 @@ CMakeFiles/PACKAGE_SOURCE.dir/clean:
 .PHONY : CMakeFiles/PACKAGE_SOURCE.dir/clean
 
 CMakeFiles/PACKAGE_SOURCE.dir/depend:
-	cd /Users/sarah/othercam/OpenMesh-2.0/cmake && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sarah/othercam/OpenMesh-2.0 /Users/sarah/othercam/OpenMesh-2.0 /Users/sarah/othercam/OpenMesh-2.0/cmake /Users/sarah/othercam/OpenMesh-2.0/cmake /Users/sarah/othercam/OpenMesh-2.0/cmake/CMakeFiles/PACKAGE_SOURCE.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/mikest/github/othercam/OpenMesh-2.0/cmake && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mikest/github/othercam/OpenMesh-2.0 /Users/mikest/github/othercam/OpenMesh-2.0 /Users/mikest/github/othercam/OpenMesh-2.0/cmake /Users/mikest/github/othercam/OpenMesh-2.0/cmake /Users/mikest/github/othercam/OpenMesh-2.0/cmake/CMakeFiles/PACKAGE_SOURCE.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PACKAGE_SOURCE.dir/depend
 
