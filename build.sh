@@ -1,5 +1,5 @@
 mkdir -p build
 cd build
-/usr/bin/cmake ..
+`which cmake` ..
 make
-make install
+#make install
