@@ -1,4 +1,4 @@
 mkdir -p build
 cd build
-`which cmake` ..
+CXX='clang++ -std=c++11 -stdlib=libc++' `which cmake` ..
 make "$@"
