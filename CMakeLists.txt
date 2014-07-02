@@ -22,6 +22,11 @@ endif ()
 add_definitions(
     -DOM_FORCE_STATIC_CAST
 )
+if(APPLE)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -stdlib=libc++")
+  set(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_MODULE_LINKER_FLAGS} -std=c++11 -stdlib=libc++")
+  set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -std=c++11 -stdlib=libc++")
+endif(APPLE)
 
 add_subdirectory (src/OpenMesh/Core)
 add_subdirectory (src/OpenMesh/Tools)
