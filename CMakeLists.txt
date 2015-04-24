@@ -37,18 +37,18 @@ add_subdirectory (Doc)
 # Bundle generation
 # ========================================================================
 
-if (WIN32 )
-  # prepare bundle generation cmake file and add a build target for it
-  configure_file ("${CMAKE_SOURCE_DIR}/cmake/fixbundle.cmake.win.in"
-     "${CMAKE_BINARY_DIR}/fixbundle.win.cmake" @ONLY IMMEDIATE)
+#if (WIN32 )
+#  # prepare bundle generation cmake file and add a build target for it
+#  configure_file ("${CMAKE_SOURCE_DIR}/cmake/fixbundle.cmake.win.in"
+#     "${CMAKE_BINARY_DIR}/fixbundle.win.cmake" @ONLY IMMEDIATE)
 
-  add_custom_target (fixbundle ALL
-    COMMAND ${CMAKE_COMMAND} -P "${CMAKE_BINARY_DIR}/fixbundle.win.cmake" )
+#  add_custom_target (fixbundle ALL
+#    COMMAND ${CMAKE_COMMAND} -P "${CMAKE_BINARY_DIR}/fixbundle.win.cmake" )
 
-  # let bundle generation depend on all targets
-  add_dependencies (fixbundle QtViewer DecimaterGui)
+#  # let bundle generation depend on all targets
+#  add_dependencies (fixbundle QtViewer DecimaterGui)
  
-endif(WIN32)
+#endif(WIN32)
 
 
 if (APPLE)

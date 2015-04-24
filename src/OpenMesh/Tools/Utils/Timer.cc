@@ -177,7 +177,7 @@ protected:
 };
 
 // ----------------------------------------------------------- gettimeofday ----
-#elif defined(__GNUC__) || (defined(__INTEL_COMPILER) && !defined(WIN32))
+#elif (defined(__GNUC__) || defined(__INTEL_COMPILER)) && !defined(WIN32)
 
 #  include <sys/time.h>
 #  include <sys/resource.h>
@@ -264,7 +264,7 @@ Timer::Timer(void)
 #  else
   impl_      = new TimerImplPosix<CLOCK_REALTIME>;
 #  endif
-#elif defined(__GNUC__) || (defined(__INTEL_COMPILER) && !defined(WIN32))
+#elif (defined(__GNUC__) || defined(__INTEL_COMPILER)) && !defined(WIN32)
   impl_      = new TimerImplGToD;
 #else
   impl_       = new TimerImplStd;

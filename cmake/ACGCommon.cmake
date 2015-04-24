@@ -431,7 +431,7 @@ function (acg_add_library _target _libtype)
     endif ()
   endif ()
 
-  if (WIN32)
+  if (WIN32 AND NOT CYGWIN AND NOT MSYS AND NOT MINGW)
     # copy exe file to "Build" directory
     # Visual studio will create this file in a subdirectory so we can't use
     # RUNTIME_OUTPUT_DIRECTORY directly here
