@@ -264,7 +264,7 @@ public:
 
     for (bidx=idx=0; idx < N; ++idx, bidx+=8)
     {
-      bits = !!data_[bidx]
+      bits = (!!data_[bidx])
         | (!!data_[bidx+1] << 1)
         | (!!data_[bidx+2] << 2)
         | (!!data_[bidx+3] << 3)
