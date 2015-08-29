@@ -1,15 +1,25 @@
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+MAKE_TARGETS+=" OpenMeshCore OpenMeshTools"
+#MAKE_FLAGS="VERBOSE=1"
+CMAKE_FLAGS+=" -DBUILD_APPS=OFF"
+
 if [ "$1" = "build" ]; then
   SYSTEM_NAME=`uname -s` 
+  if [ "$2" = release ]; then 
+    CMAKE_FLAGS+=" -DCMAKE_BUILD_TYPE=Release"
+  elif [ "$2" = debug ]; then
+    CMAKE_FLAGS+=" -DCMAKE_BUILD_TYPE=Debug"
+  fi 
+
   if [ "$SYSTEM_NAME" = "Darwin" ]; then
     echo "Building for OSX"
     (cd $DIR && \
       mkdir -p build && \
       cd build && \
       echo "Running cmake in `pwd`" && \
-      `which cmake` .. && \
+      `which cmake` $CMAKE_FLAGS .. && \
       echo "Running make in `pwd`" && \
-      make && \
+      make $MAKE_FLAGS $MAKE_TARGETS && \
       echo "Success!")
   elif echo "$SYSTEM_NAME" | grep -q "MINGW64_NT"; then
     echo "Building for Windows"
@@ -17,9 +27,9 @@ if [ "$1" = "build" ]; then
       mkdir -p build && \
       cd build && \
       echo "Running cmake in `pwd`" && \
-      cmake -DWIN32=1 -G "MSYS Makefiles" .. && \
+      cmake $CMAKE_FLAGS -DWIN32=1 -G "MSYS Makefiles" .. && \
       echo "Running make in `pwd`" && \
-      make && \
+      make $MAKE_FLAGS $MAKE_TARGETS && \
       echo "Performing manual copy step hack" && \
       cp src/OpenMesh/Core/libOpenMeshCore.a Build/lib/ && \
       cp src/OpenMesh/Tools/libOpenMeshTools.a Build/lib/ && \
