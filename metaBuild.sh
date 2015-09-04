@@ -3,6 +3,13 @@ MAKE_TARGETS+=" OpenMeshCore OpenMeshTools"
 #MAKE_FLAGS="VERBOSE=1"
 CMAKE_FLAGS+=" -DBUILD_APPS=OFF"
 
+if [ "$3x" = "x" ]; then
+  ARCH=x86-64
+else
+  ARCH=$3
+fi
+echo Architecture is set to $ARCH
+
 if [ "$1" = "build" ]; then
   SYSTEM_NAME=`uname -s` 
   if [ "$2" = release ]; then 
@@ -17,7 +24,7 @@ if [ "$1" = "build" ]; then
       mkdir -p build && \
       cd build && \
       echo "Running cmake in `pwd`" && \
-      `which cmake` $CMAKE_FLAGS .. && \
+      `which cmake` $CMAKE_FLAGS -DARCH:STRING=$ARCH .. && \
       echo "Running make in `pwd`" && \
       make $MAKE_FLAGS $MAKE_TARGETS && \
       echo "Success!")

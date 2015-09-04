@@ -22,8 +22,11 @@ endif ()
 add_definitions(
     -DOM_FORCE_STATIC_CAST
 )
+
+set(ARCH "x86-64" CACHE STRING "architecture to compile for")
 if(APPLE)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -stdlib=libc++")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=${ARCH} -mtune=generic")
   set(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_MODULE_LINKER_FLAGS} -std=c++11 -stdlib=libc++")
   set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -std=c++11 -stdlib=libc++")
 endif(APPLE)
