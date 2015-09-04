@@ -3,7 +3,7 @@ MAKE_TARGETS+=" OpenMeshCore OpenMeshTools"
 #MAKE_FLAGS="VERBOSE=1"
 CMAKE_FLAGS+=" -DBUILD_APPS=OFF"
 
-if [ "$3x" = "x" ]; then
+if [ -z "$3" ]; then
   ARCH=x86-64
 else
   ARCH=$3
