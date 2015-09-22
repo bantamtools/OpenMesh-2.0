@@ -99,6 +99,23 @@ static BaseWriter* OMWriterInstance  = &OMWriter();
 static BaseWriter* PLYWriterInstance = &PLYWriter();
 
 
+namespace {
+  static void noop() {
+    noop();
+    (void)OFFReaderInstance;
+    (void)OBJReaderInstance;
+    (void)PLYReaderInstance;
+    (void)STLReaderInstance;
+    (void)OMReaderInstance;
+    (void)OBJWriterInstance;
+    (void)OFFWriterInstance;
+    (void)STLWriterInstance;
+    (void)OMWriterInstance;
+    (void)PLYWriterInstance;
+  }
+}
+
+
 //=============================================================================
 } // namespace IO
 } // namespace OpenMesh
