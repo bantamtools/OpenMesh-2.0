@@ -18,8 +18,8 @@ if [ "$1" = "build" ]; then
     CMAKE_FLAGS+=" -DCMAKE_BUILD_TYPE=Debug"
   fi 
 
-  if [ "$SYSTEM_NAME" = "Darwin" ]; then
-    echo "Building for OSX"
+  if [ "$SYSTEM_NAME" = "Darwin" -o "$SYSTEM_NAME" = "Linux" ]; then
+    echo "Building for $SYSTEM_NAME"
     (cd $DIR && \
       mkdir -p build && \
       cd build && \
