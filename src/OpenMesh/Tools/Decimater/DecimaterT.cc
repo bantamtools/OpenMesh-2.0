@@ -4,10 +4,10 @@
  *      Copyright (C) 2001-2010 by Computer Graphics Group, RWTH Aachen      *
  *                           www.openmesh.org                                *
  *                                                                           *
- *---------------------------------------------------------------------------* 
+ *---------------------------------------------------------------------------*
  *  This file is part of OpenMesh.                                           *
  *                                                                           *
- *  OpenMesh is free software: you can redistribute it and/or modify         * 
+ *  OpenMesh is free software: you can redistribute it and/or modify         *
  *  it under the terms of the GNU Lesser General Public License as           *
  *  published by the Free Software Foundation, either version 3 of           *
  *  the License, or (at your option) any later version with the              *
@@ -30,10 +30,10 @@
  *  License along with OpenMesh.  If not,                                    *
  *  see <http://www.gnu.org/licenses/>.                                      *
  *                                                                           *
-\*===========================================================================*/ 
+\*===========================================================================*/
 
 /*===========================================================================*\
- *                                                                           *             
+ *                                                                           *
  *   $Revision: 325 $                                                         *
  *   $Date: 2010-06-17 12:45:58 +0200 (Do, 17 Jun 2010) $                   *
  *                                                                           *
@@ -79,7 +79,11 @@ template <class Mesh>
 DecimaterT<Mesh>::
 DecimaterT( Mesh& _mesh )
   : mesh_(_mesh),
+#if (defined(_MSC_VER) && (_MSC_VER >= 1900)) || __cplusplus > 199711L || defined( __GXX_EXPERIMENTAL_CXX0X__ )
+    heap_(nullptr),
+#else
     heap_(NULL),
+#endif
     cmodule_(NULL),
     initialized_(false)
 {
@@ -210,7 +214,7 @@ initialize()
   if(!pmodule && quadric) {
     pmodule = quadric;
   }
-  
+
   if(!pmodule) {
     // At least one priority module required
     set_uninitialized();
@@ -446,7 +450,11 @@ DecimaterT<Mesh>::decimate( size_t _n_collapses )
 
   // initialize heap
   HeapInterface  HI(mesh_, priority_, heap_position_);
+#if (defined(_MSC_VER) && (_MSC_VER >= 1900)) || __cplusplus > 199711L || defined( __GXX_EXPERIMENTAL_CXX0X__ )
+  heap_ = std::unique_ptr<DeciHeap>(new DeciHeap(HI));
+#else
   heap_ = std::auto_ptr<DeciHeap>(new DeciHeap(HI));
+#endif
   heap_->reserve(mesh_.n_vertices());
 
 
