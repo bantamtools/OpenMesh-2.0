@@ -4,10 +4,10 @@
  *      Copyright (C) 2001-2010 by Computer Graphics Group, RWTH Aachen      *
  *                           www.openmesh.org                                *
  *                                                                           *
- *---------------------------------------------------------------------------* 
+ *---------------------------------------------------------------------------*
  *  This file is part of OpenMesh.                                           *
  *                                                                           *
- *  OpenMesh is free software: you can redistribute it and/or modify         * 
+ *  OpenMesh is free software: you can redistribute it and/or modify         *
  *  it under the terms of the GNU Lesser General Public License as           *
  *  published by the Free Software Foundation, either version 3 of           *
  *  the License, or (at your option) any later version with the              *
@@ -30,10 +30,10 @@
  *  License along with OpenMesh.  If not,                                    *
  *  see <http://www.gnu.org/licenses/>.                                      *
  *                                                                           *
-\*===========================================================================*/ 
+\*===========================================================================*/
 
 /*===========================================================================*\
- *                                                                           *             
+ *                                                                           *
  *   $Revision: 325 $                                                         *
  *   $Date: 2010-06-17 12:45:58 +0200 (Do, 17 Jun 2010) $                   *
  *                                                                           *
@@ -128,7 +128,7 @@ public: //--------------------------------------------------- module management
     all_modules_.push_back( _mh.module() );
 
     set_uninitialized();
-    
+
     return true;
   }
 
@@ -175,7 +175,7 @@ public:
   size_t decimate_to( size_t  _n_vertices )
   {
     return ( (_n_vertices < mesh().n_vertices()) ?
-	     decimate( mesh().n_vertices() - _n_vertices ) : 0 );
+         decimate( mesh().n_vertices() - _n_vertices ) : 0 );
   }
 
 
@@ -263,7 +263,11 @@ private: //------------------------------------------------------- private data
   Mesh&      mesh_;
 
   // heap
-  std::auto_ptr<DeciHeap> heap_;
+#if (defined(_MSC_VER) && (_MSC_VER >= 1900)) || __cplusplus > 199711L || defined( __GXX_EXPERIMENTAL_CXX0X__ )
+    std::unique_ptr<DeciHeap> heap_;
+#else
+    std::auto_ptr<DeciHeap> heap_;
+#endif
 
   // list of binary modules
   ModuleList bmodules_;
@@ -273,7 +277,7 @@ private: //------------------------------------------------------- private data
 
   // list of all allocated modules (including cmodule_ and all of bmodules_)
   ModuleList all_modules_;
-    
+
   bool       initialized_;
 
 
