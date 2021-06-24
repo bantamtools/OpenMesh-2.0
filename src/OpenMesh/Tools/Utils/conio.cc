@@ -71,6 +71,7 @@ int getche() { return ::getche(); }
 #include <termios.h>   /* tcsetattr()    */
 #include <sys/ioctl.h> /* ioctl()        */
 #include <sys/time.h>  /* struct timeval */
+#include <sys/socket.h>
 
 namespace OpenMesh {
 namespace Utils {
